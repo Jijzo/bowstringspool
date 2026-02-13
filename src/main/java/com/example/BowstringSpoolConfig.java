@@ -5,12 +5,12 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("example")
-public interface ExampleConfig extends Config
+public interface BowstringSpoolConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "spool",
+		name = "Bowstring Spool Counter",
+		description = "An overlay of the amount of bowstrings still in the spool"
 	)
 	default String greeting()
 	{
